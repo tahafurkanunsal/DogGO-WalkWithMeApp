@@ -308,6 +308,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
 
+    //Map to Entity function
     private Customer mapToEntity(CustomerDto customerDto) {
 
         Customer customer = modelMapper.map(customerDto, Customer.class);
