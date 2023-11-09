@@ -314,13 +314,14 @@ public class CustomerServiceImpl implements CustomerService {
         return customer;
     }
 
+    //Map to Dto function
     private ReservationDto mapToDTO(Reservation reservation) {
 
         ReservationDto reservationDto = modelMapper.map(reservation, ReservationDto.class);
         return reservationDto;
 
     }
-
+    //Map to entity function
     private Reservation mapToEntity(ReservationDto reservationDto) {
 
         Reservation reservation = modelMapper.map(reservationDto, Reservation.class);
